@@ -89,7 +89,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	}
   
 	button#download {
-	  position: fixed;
+	  
 	  border-radius: 0.5rem;
 	  font-size: 14px;
 	  font-weight: 600;
@@ -108,7 +108,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
   
 	button#download:hover {
 	  background: #ffcccc;
-   color: #000000;
+   	  color: #000000;
 	  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.06), 0 6px 12px -3px rgba(0, 0, 0, 0.1);
 	}
   
@@ -119,9 +119,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	button#download.done {
 	  color: #16a34a;
 	}
-  div#content {
-  visibility: hidden;
-  }
+
 	::-webkit-scrollbar {
 	  width: 5px;
 	  background-color: rgb(0 0 0 / 8%);
@@ -141,7 +139,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	  <div class="header">
 		<button class="button" id="download">Download PDF</button>
 	  </div>
-	  <div id="content" style="visibility:hidden;">${html}</div>
+	  <div id="content">${html}</div>
 	  </div>
 	  <script>
 	  document.getElementById('download').addEventListener('click', function() {
@@ -169,7 +167,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 		button.innerText = 'Done 🎉';
 		button.className = 'done';
 		setTimeout(function() { 
-		  button.innerText = 'Download';
+		  button.innerText = 'Download PDF';
 		  button.className = ''; 
 		}, 2000);
 		}).save();
