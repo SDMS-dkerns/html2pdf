@@ -89,8 +89,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	}
   
 	button#download {
-	  display: flex;
-  	  align-items: center;
+
 	  border-radius: 0.5rem;
 	  font-size: 14px;
 	  font-weight: 600;
@@ -137,7 +136,8 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 	  <style>${customCSS}</style>
 	  <div class="main">
-	  <div class="header">
+	  <div class="header" style="display: flex;
+  	  align-items: center;">
 		<button class="button" id="download">Download PDF</button>
 	  </div>
 	  <div id="content">${html}</div>
