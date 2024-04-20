@@ -138,7 +138,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	  <style>${customCSS}</style>
 	  <div class="main">
 	  <div class="header" style="display: flex;
-  	  align-items: center;">
+  	  align-items: center; justify-content: center;">
 		<button class="button" id="download">Download PDF</button>
 	  </div>
 	  <div id="content">${html}</div>
