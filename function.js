@@ -83,7 +83,9 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 			`Break before: ${breakBefore}\n` +
 			`Break after: ${breakAfter}\n` +
 			`Break avoid: ${breakAvoid}\n` +
-			`Quality: ${quality}`
+			`Quality: ${quality}` +
+			`Button Background Color: ${buttonBGColor}\n` +
+			`Button Text Color: ${buttonTextColor}\n`
 	);
 
 	const customCSS = `
@@ -112,7 +114,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
   
 	button#download:hover {
 	  color: ${buttonBGColor},
-   	  background: ${buttonTextColor};
+   	  background: ${buttonTextColor},
 	  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.06), 0 6px 12px -3px rgba(0, 0, 0, 0.1);
 	}
   
