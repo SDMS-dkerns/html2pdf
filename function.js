@@ -136,9 +136,9 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	  <style>${customCSS}</style>
 	  <div class="main">
 	  <div class="header">
-		<button class="button" id="download">Download</button>
+		<button class="button" id="download">Download PDF</button>
 	  </div>
-	  <div id="content">${html}</div>
+	  <div id="content" style="visibility:hidden;">${html}</div>
 	  </div>
 	  <script>
 	  document.getElementById('download').addEventListener('click', function() {
