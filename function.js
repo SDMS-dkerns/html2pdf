@@ -86,7 +86,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	const customCSS = `
 	body {
 	  margin: 0!important;
-   	  font: Arial, sans-serif;
+   	  font-family: Arial, Helvetica, sans-serif;
 	}
   
 	button#download {
