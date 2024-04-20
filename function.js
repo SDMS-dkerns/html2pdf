@@ -94,7 +94,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	  font-size: 14px;
 	  font-weight: 600;
 	  line-height: 1.5rem;
-	  color: #000000;
+	  color: #ffffff;
 	  border: 1px solid black;
 	  font-family: 'Inter';
 	  padding: 0px 12px;
@@ -118,7 +118,9 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	button#download.done {
 	  color: #16a34a;
 	}
-  
+  div#content {
+  visibility: hidden;
+  }
 	::-webkit-scrollbar {
 	  width: 5px;
 	  background-color: rgb(0 0 0 / 8%);
