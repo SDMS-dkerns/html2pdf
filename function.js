@@ -173,7 +173,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 		}
 		};
 		html2pdf().set(opt).from(element).toPdf().get('pdf').then(function(pdf) {
-		button.innerText = 'Done 🎉';
+		button.innerText = 'Done';
 		button.className = 'done';
 		setTimeout(function() { 
 		  button.innerText = 'Download PDF';
