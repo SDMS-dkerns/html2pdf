@@ -83,15 +83,16 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 			`Break before: ${breakBefore}\n` +
 			`Break after: ${breakAfter}\n` +
 			`Break avoid: ${breakAvoid}\n` +
-			`Quality: ${quality}` +
+			`Quality: ${quality}\n` +
 			`Button Background Color: ${buttonBGColor}\n` +
-			`Button Text Color: ${buttonTextColor}\n`
+			`Button Text Color: ${buttonTextColor}`
 	);
 
 	const customCSS = `
 	body {
 	  margin: 0!important;
    	  font-family: Arial, Helvetica, sans-serif!important;
+      	  font-size: 16px;
 	}
   
 	button#download {
