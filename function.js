@@ -108,6 +108,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
   
 	button#download:hover {
 	  background: #f5f5f5;
+   color: #ffffff;
 	  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.06), 0 6px 12px -3px rgba(0, 0, 0, 0.1);
 	}
   
