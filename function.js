@@ -93,7 +93,7 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	  margin: 0!important;
    	  font-family: Arial, Helvetica, sans-serif!important;
       	  font-size: 16px;
-	 line-height: 1.6;
+	 line-height: 1.8;
 	}
   
 	button#download {
