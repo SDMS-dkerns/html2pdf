@@ -1,4 +1,4 @@
-window.function = function (html, fileName, format, zoom, orientation, margin, breakBefore, breakAfter, breakAvoid, fidelity, customDimensions) {
+window.function = function (html, fileName, format, zoom, orientation, margin, breakBefore, breakAfter, breakAvoid, fidelity, customDimensions,buttonBGColor,buttonTextColor) {
 	// FIDELITY MAPPING
 	const fidelityMap = {
 		low: 1,
@@ -18,6 +18,8 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	breakAvoid = breakAvoid.value ? breakAvoid.value.split(",") : [];
 	quality = fidelityMap[fidelity.value] ?? 1.5;
 	customDimensions = customDimensions.value ? customDimensions.value.split(",").map(Number) : null;
+	buttonColor = buttonColor.value ?? "#ffffff";
+	buttonBGColor = buttonBGColor.value ?? "#000000";
 
 	// DOCUMENT DIMENSIONS
 	const formatDimensions = {
@@ -108,8 +110,8 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	}
   
 	button#download:hover {
-	  background: #ffcccc;
-   	  color: #000000;
+	  color: ${buttonBGColor},
+   	  background: ${buttonTextColor};
 	  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.06), 0 6px 12px -3px rgba(0, 0, 0, 0.1);
 	}
   
