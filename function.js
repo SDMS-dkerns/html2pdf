@@ -100,12 +100,12 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	  font-size: 14px;
 	  font-weight: 600;
 	  line-height: 1.5rem;
-	  color: #ffffff;
+	  color: ${buttonTextColor};
 	  border: 1px solid black;
 	  font-family: 'Inter';
 	  padding: 0px 12px;
 	  height: 32px;
-	  background: red;
+	  background: ${buttonBGColor};
 	  top: 8px;
 	  right: 8px;
 	  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 1px 2.5px rgba(0, 0, 0, 0.1);
@@ -113,8 +113,8 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	}
   
 	button#download:hover {
-	  color: ${buttonBGColor},
-   	  background: ${buttonTextColor},
+	  color: ${buttonTextColor},
+   	  background: ${buttonBGColor},
 	  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.06), 0 6px 12px -3px rgba(0, 0, 0, 0.1);
 	}
   
