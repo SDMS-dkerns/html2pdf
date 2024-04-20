@@ -62,7 +62,7 @@
 			},
 			{
 				"name": "buttonBGColor",
-				"displayName": "Button Background Color (e.g.: #000000 or red",
+				"displayName": "Button Background Color (e.g.: #000000 or red)",
 				"type": "string"
 			},
 			{
