@@ -94,12 +94,12 @@ window.function = function (html, fileName, format, zoom, orientation, margin, b
 	  font-size: 14px;
 	  font-weight: 600;
 	  line-height: 1.5rem;
-	  color: #0d0d0d;
-	  border: none;
+	  color: #000000;
+	  border: 1px solid black;
 	  font-family: 'Inter';
 	  padding: 0px 12px;
 	  height: 32px;
-	  background: #ffffff;
+	  background: red;
 	  top: 8px;
 	  right: 8px;
 	  box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.08), 0 1px 2.5px rgba(0, 0, 0, 0.1);
